@@ -203,3 +203,44 @@ color: var(--cornflower-color);
 }
 .style-footer{
     background: var(--navy-blue-color);}
+h1,
+h2,
+h3,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+address{
+ font-style: normal;   
+}
+button{
+    cursor: pointer;
+}
+.container{
+    max-width: 1128px;
+   padding: 0 15px; 
+   margin: 0 auto; 
+}
+.page-nav{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.adress-menu{
+    display: flex;
+    align-items: center;
+}
+
