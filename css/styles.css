@@ -113,12 +113,14 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 color: var(--body-background-color);
 background: var(--iris-color);
-margin-top: 48px;
-border: 0;
+border: none;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
  
 }
 .features{
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 .features-item{
     width: calc(((100% - 60px) / 4));
@@ -129,7 +131,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--navy-blue-color);
-padding-bottom: 8px;
+margin-bottom: 8px;
 }
 .features-text{
 font-size: 16px;
@@ -143,7 +145,6 @@ color: var(--slate-color);
     gap: 24px ;
 }
 .our-work{
-    margin-top: 120px;
     padding-bottom: 120px;
     text-align: center;
 }
@@ -172,6 +173,10 @@ color: var(--slate-color);
     gap: 24px;
     align-items: center;
 }
+    .card-text{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .team-header{
 font-weight:700;
 font-size: 36px;
@@ -186,16 +191,12 @@ margin-bottom: 72px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: inherit;
-    text-align: center;
-    padding-top: 32px;
+    text-align: center;    
 }
 .borders-text{
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  border-left: 1px solid #e7e9fc;
-    border-right: 1px solid #e7e9fc;
-    border-bottom: 1px solid #e7e9fc;
   background: var(--body-background-color);
 }
 .speciality{
@@ -203,8 +204,8 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--slate-color);
-padding-top: 8px;
-padding-bottom: 32px;
+margin-top: 8px;
+
 }
 
 .body{
@@ -222,14 +223,12 @@ color: var(--navy-blue-color);
 .buttons-item:is(:hover,:focus){
 background: var(--ocean-color);
 color: var(--body-background-color);
-cursor: pointer;
 }
 .buttons-item{
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 24px;
     padding-right: 24px;
-    border: 0;
 }
 .buttons-style{
     font-family: inherit;
@@ -239,6 +238,10 @@ line-height: 1.5;
 letter-spacing: 0.04em; 
 color: var(--iris-color);
 background: var(--cloud-color);
+cursor: pointer;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border: 1px solid #E7E9FC;
+border-radius: 4px;
 }
 .buttons-list{
    display: flex;
@@ -246,29 +249,33 @@ background: var(--cloud-color);
         justify-content: center;
         gap: 24px;
 }
+.borders-card{
+    border: 1px solid #E7E9FC;
+    border-top: none;
+    background: var(--body-background-color);
+    padding-top: 32px;
+padding-left: 16px;
+padding-bottom: 32px;
+}
 .image-name{
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--navy-blue-color);
-padding-top: 32px;
-padding-left: 16px;
 }
 .img-text{
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--slate-color);
-padding-bottom: 32px;
 padding-top: 8px;
-padding-left: 16px;
 }
 .images{
     display: flex;
   flex-wrap: wrap;
  row-gap : 48px;
- padding-top: 72px;
+ margin-top: 72px;
 } .service-card:not(:nth-child(3n)){
 width: calc(((100% - 48px)) / 3);
 margin-right: 24px;
